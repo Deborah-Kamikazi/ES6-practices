@@ -1,35 +1,35 @@
-// "use strict";
+"use strict";
 
-// function IceCream() {
-//     this.scoops = 0;
+function IceCream() {
+    this.scoops = 0;
 
-// }
+}
 
-// // adds scoop to ice cream
-// IceCream.prototype.addScoop = ()=> { // addScoop is now an arrow function
-//   setTimeout(() => {
-//       console.log(this.scoops);
-//       this
-//   }, 0.5);
-// };
+// adds scoop to ice cream
+IceCream.prototype.addScoop = ()=> { // addScoop is now an arrow function
+  setTimeout(() => {
+      console.log(this.scoops);
+      this
+  }, 0.5);
+};
 
-// const dessert = new IceCream();
-// dessert.addScoop();
+const dessert = new IceCream();
+dessert.addScoop();
 
-// function Plane(numEngines) {
-//     this.numEngines = numEngines;
-//     this.enginesActive = false;
-//   }
+function Plane(numEngines) {
+    this.numEngines = numEngines;
+    this.enginesActive = false;
+  }
   
   // methods "inherited" by all instances
-  // Plane.prototype.startEngines = function () {
-  //   console.log('starting engines...');
-  //   this.enginesActive = true;
-  // };
+  Plane.prototype.startEngines = function () {
+    console.log('starting engines...');
+    this.enginesActive = true;
+  };
   
-  // var richardsPlane = new Plane(1);
-  // console.log(richardsPlane.enginesActive);
-  // richardsPlane.startEngines();
+  var richardsPlane = new Plane(1);
+  console.log(richardsPlane.enginesActive);
+  richardsPlane.startEngines();
 
   
   var x = 10;
