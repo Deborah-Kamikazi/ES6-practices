@@ -3,14 +3,15 @@
 // occupation (optional). Using destructuring, return a new object containing only the name and city properties.
 
 
-function extractProfile (){
-    let user = {
-        name:"kamil",
-        age: 19,
-        city:"kigali",
-        occupation:"gastata"
-    }
+function extractProfile (user){
+    
     let{name,city} = user;
-    console.log(name);
-    console.log(city);
+    console.log( {name,city} );
 }
+let user = {
+    name:"kamil",
+    age: 19,
+    city:"kigali",
+    occupation:"gastata"
+}
+extractProfile(user);
