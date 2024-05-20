@@ -18,3 +18,6 @@ const setss = new Set(['kami','1' ,'uwera','1','Deborah']);
 for(sets of setss){
     console.log(sets);
 }
+
+
+console.log( Symbol(''));

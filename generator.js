@@ -8,3 +8,13 @@ function* names(){
 let gen = names();
 let results = gen.next();
 console.log(results);
+
+
+function * answer (){
+    yield 'hello';
+    yield 'word';
+}
+
+let namese = answer();
+let an =  namese.next().value;
+console.log(an);
